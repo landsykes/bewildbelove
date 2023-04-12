@@ -231,7 +231,7 @@ background: linear-gradient(0deg, rgba(254, 200, 154,0.8) 0%, rgba(255, 96, 162,
 <body class="belovewebsite">
 <div class="headerBelove">
 	<img id="btnReset" class="logoBelove" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095622364055744582/belovelogo.png">
-	<img id="btnReset" class="logoBelovesmall" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095681635627827210/icon.png">
+	<img id="btnResetSmall" class="logoBelovesmall" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095681635627827210/icon.png">
 	<a href="#" id="btnMaster">
 		<img src="https://i22.servimg.com/u/f22/16/09/20/13/master10.png">
 	</a>
@@ -423,6 +423,13 @@ FIN GALERIE PHOTO
 	const profilRapide = document.getElementById("profilRapide");
 	const profilBis = document.getElementById("profilBis");
 	btnReset.onclick = function () {
+    	profilMaster.style.display = "block";
+    	profilCopain.style.display = "block";
+    	profilChrono.style.display = "block";
+    	profilRapide.style.display = "block";
+    	profilBis.style.display = "block";
+	};
+	btnResetSmall.onclick = function () {
     	profilMaster.style.display = "block";
     	profilCopain.style.display = "block";
     	profilChrono.style.display = "block";
