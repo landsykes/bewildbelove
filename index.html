@@ -17,7 +17,7 @@
   position:relative;
   font-family: 'Open Sans', sans-serif;
   font-size:13px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 } 
 
 .beloveProfil .alignFlex {
@@ -210,29 +210,46 @@ background: linear-gradient(0deg, rgba(254, 200, 154,0.8) 0%, rgba(255, 96, 162,
 .headerBelove a {
 	margin-right: 20px;
 }
+
+.logoBelovesmall {
+	display:none;
+}
+
+@media screen and (max-width: 680px){
+	.logoBelove {
+		display: none;
+	}
+	.logoBelovesmall {
+		display: block;
+		width: 50px;
+    	margin-right: 15px;
+    	margin-left: 15px;
+	}
+}
 </style>
 </head>
 <body class="belovewebsite">
 <div class="headerBelove">
-	<img class="logoBelove" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095622364055744582/belovelogo.png">
-	<a href="#!">
+	<img id="btnReset" class="logoBelove" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095622364055744582/belovelogo.png">
+	<img id="btnReset" class="logoBelovesmall" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095681635627827210/icon.png">
+	<a href="#" id="btnMaster">
 		<img src="https://i22.servimg.com/u/f22/16/09/20/13/master10.png">
 	</a>
-	<a href="#!">
+	<a href="#" id="btnCopain">
 		<img src="https://i22.servimg.com/u/f22/16/09/20/13/copain10.png">
 	</a>
-	<a href="#!">
+	<a href="#!" id="btnChrono">
 		<img src="https://i22.servimg.com/u/f22/16/09/20/13/chrono10.png">
 	</a>
-	<a href="#!">
+	<a href="#" id="btnRapide">
 		<img src="https://i22.servimg.com/u/f22/16/09/20/13/rapide10.png">
 	</a>
-	<a href="#!">
+	<a href="#" id="btnBis">
 		<img src="https://i22.servimg.com/u/f22/16/09/20/13/bis10.png">
 	</a>
 </div>
 <div class="displayProfiles">
-	<div class="beloveProfil"><div class="alignFlex"><!--
+	<div id="profilMaster" class="beloveProfil"><div class="alignFlex"><!--
 IMAGE DE PROFIL (resize automatique)
 --><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
 RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
@@ -264,7 +281,7 @@ GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
 --><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
 FIN GALERIE PHOTO
 --></div> 
-<div class="beloveProfil"><div class="alignFlex"><!--
+<div id="profilCopain" class="beloveProfil"><div class="alignFlex"><!--
 IMAGE DE PROFIL (resize automatique)
 --><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
 RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
@@ -296,7 +313,39 @@ GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
 --><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
 FIN GALERIE PHOTO
 --></div> 
-<div class="beloveProfil"><div class="alignFlex"><!--
+<div id="profilChrono" class="beloveProfil"><div class="alignFlex"><!--
+IMAGE DE PROFIL (resize automatique)
+--><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
+RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
+--><img src="https://i22.servimg.com/u/f22/16/09/20/13/chrono10.png" class="iconRelation"><!-- 
+NOM DU PERSONNAGE
+--><div class="nameProfil">Duncan LLORIS</div><!-- 
+AGE et LIEU D'HABITATION
+--><div class="ageLocation">29 ans • New Pyra (Haptos)</div><div class="tagInterest"><!--
+TAG CENTRE D'INTERET
+--><div>Soirées</div><div>Sportif</div><div>Cuisiner</div><div>Combats pokémons</div><!-- 
+--></div></div><!--  
+--></div><div class="detailProfil"><!-- 
+ORIENTATION SEXUELLE
+--><div class="partRub"><div class="titleRubrique">Orientation sexuelle</div><div class="answerRubrique">Bisexuelle</div></div><!--
+PROFESSION
+--><div class="partRub"><div class="titleRubrique">Profession</div><div class="answerRubrique">Coach en combat pokémon</div></div><!--
+DATE DE NAISSANCE ET SIGNE ASTRO
+--><div class="partRub"><div class="titleRubrique">Date de naissance & Signe astrologique</div><div class="answerRubrique">21/11/1993 - Sagittaire</div></div><!--
+SI TU ETAIS UN POKEMON 
+--><div class="partRub"><div class="titleRubrique">Si tu étais un pokémon, quelle espèce serais-tu et pourquoi ?</div><div class="answerRubrique">Un Arcanin pour sa loyauté</div></div><!--
+ALCOOL ET TABAC
+--><div class="partRub"><div class="titleRubrique">Niveau alcool et tabac</div><div class="answerRubrique">Fume beaucoup et bois en soirée</div></div><!-- 
+QUELQUES DETAILS SUR TOI
+--><div class="partRub"><div class="titleRubrique">Donnes nous plus de détail sur toi, même les plus croustillants ~</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+TON PARTENAIRE IDEAL
+--><div class="partRub"><div class="titleRubrique">Sinon, à quoi pourrait ressembler ton partenaire idéal ?</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+--></div></div><!-- 
+GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
+--><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
+FIN GALERIE PHOTO
+--></div> 
+<div id="profilRapide" class="beloveProfil"><div class="alignFlex"><!--
 IMAGE DE PROFIL (resize automatique)
 --><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
 RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
@@ -328,7 +377,7 @@ GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
 --><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
 FIN GALERIE PHOTO
 --></div> 
-<div class="beloveProfil"><div class="alignFlex"><!--
+<div id="profilBis" class="beloveProfil"><div class="alignFlex"><!--
 IMAGE DE PROFIL (resize automatique)
 --><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
 RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
@@ -361,5 +410,60 @@ GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
 FIN GALERIE PHOTO
 --></div> 
 </div>
+<script type="text/javascript">
+	const btnMaster = document.getElementById("btnMaster");
+	const btnCopain = document.getElementById("btnCopain");
+	const btnChrono = document.getElementById("btnChrono");
+	const btnRapide = document.getElementById("btnRapide");
+	const btnBis = document.getElementById("btnBis");
+	const btnReset = document.getElementById("btnReset");
+	const profilMaster = document.getElementById("profilMaster");
+	const profilCopain = document.getElementById("profilCopain");
+	const profilChrono = document.getElementById("profilChrono");
+	const profilRapide = document.getElementById("profilRapide");
+	const profilBis = document.getElementById("profilBis");
+	btnReset.onclick = function () {
+    	profilMaster.style.display = "block";
+    	profilCopain.style.display = "block";
+    	profilChrono.style.display = "block";
+    	profilRapide.style.display = "block";
+    	profilBis.style.display = "block";
+	};
+	btnMaster.onclick = function () {
+    	profilMaster.style.display = "block";
+    	profilCopain.style.display = "none";
+    	profilChrono.style.display = "none";
+    	profilRapide.style.display = "none";
+    	profilBis.style.display = "none";
+	};
+	btnCopain.onclick = function () {
+    	profilMaster.style.display = "none";
+    	profilCopain.style.display = "block";
+    	profilChrono.style.display = "none";
+    	profilRapide.style.display = "none";
+    	profilBis.style.display = "none";
+	};
+	btnChrono.onclick = function () {
+    	profilMaster.style.display = "none";
+    	profilCopain.style.display = "none";
+    	profilChrono.style.display = "block";
+    	profilRapide.style.display = "none";
+    	profilBis.style.display = "none";
+	};
+	btnRapide.onclick = function () {
+    	profilMaster.style.display = "none";
+    	profilCopain.style.display = "none";
+    	profilChrono.style.display = "none";
+    	profilRapide.style.display = "block";
+    	profilBis.style.display = "none";
+	};
+	btnBis.onclick = function () {
+    	profilMaster.style.display = "none";
+    	profilCopain.style.display = "none";
+    	profilChrono.style.display = "none";
+    	profilRapide.style.display = "none";
+    	profilBis.style.display = "block";
+	};
+</script>
 </body>
 </html>
