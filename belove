@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Be.Love</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+.beloveProfil {
+  width:600px;
+  margin:auto;
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size:13px;
+  margin-bottom: 30px;
+} 
+
+.beloveProfil .alignFlex {
+    display:flex;
+    height:350px;
+}
+
+.beloveProfil .profilPicture {
+  width:250px;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+} 
+
+.beloveProfil .maskShadow {
+background: linear-gradient(0deg, rgba(254, 200, 154,0.8) 0%, rgba(255, 96, 162,0.4) 40%, rgba(0,0,0,0) 100%);
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: flex-end;
+    padding: 8.5px 5%;
+    position: relative;
+  flex-direction: column;
+    justify-content: flex-end;
+  color:white;
+  text-align:right;
+}
+
+.beloveProfil .iconRelation {
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.beloveProfil .ageLocation {
+  text-shadow: 0 0 5px #ab686b;
+}
+ 
+.beloveProfil .nameProfil {
+  font-size:26px;
+  line-height:25px;
+  font-weight:bold;
+  width:100%;
+  font-family: 'Alkatra', cursive;
+}
+
+.beloveProfil .tagInterest {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top:5px;
+  margin-right:-3px;
+}
+
+.beloveProfil .tagInterest div {
+  background-color:#fff;
+  margin:2px;
+  padding:2px 5px;
+  border-radius:3px;
+  color:#fe999d;
+  font-weight:600;
+  text-transform:uppercase;
+  font-size:10px;
+} 
+ 
+.beloveProfil .detailProfil {
+  background-color:#fff3ea;
+  width:350px;
+  padding: 8.5px 3%;
+  height: 95%;
+  overflow:auto;
+}
+
+.beloveProfil .titleRubrique {
+    font-size:15px;
+  line-height:18px;
+  font-weight:bold;
+  width:100%;
+  font-family: 'Alkatra', cursive;
+  margin-top:5px;
+  color:#fe999d;
+}
+
+.beloveProfil .partRub {
+  border-left:3px solid #fe999d;
+  background-color:white;
+  padding:5px;
+  padding-left:10px;
+  margin:10px 0px;
+  text-align:justify;
+  padding-right:11px;
+  font-size:12px;
+  box-shadow: 1px 1px 3px #e7d8d8;
+} 
+
+.beloveProfil .morePictures {
+  width:96%;
+  background: linear-gradient(-45deg, rgba(254, 200, 154,1) 0%, rgba(255, 96, 162,1) 100%);
+  padding:10px 2%;
+  margin-top:10px;
+
+}
+
+.beloveProfil .morePictures .carouselPictures {
+    display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.beloveProfil .morePictures img {
+  width:175px;
+  height:150px;
+  object-fit:cover;
+  object-position:center top;
+  border:5px solid white;
+}
+
+.beloveProfil .titlePictures {
+    font-size:26px;
+  line-height:18px;
+  font-weight:bold;
+  width:100%;
+  font-family: 'Alkatra', cursive;
+  margin-top:10px;
+  margin-bottom:15px;
+  color:#fff;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fe999d;
+}
+ 
+/* width */
+.beloveProfil ::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+/* Track */
+.beloveProfil ::-webkit-scrollbar-track {
+  background: #fff3ea;
+}
+
+/* Handle */
+.beloveProfil ::-webkit-scrollbar-thumb {
+  background: #fe999d;
+}
+
+.headerBelove {
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100vw;
+	height:70px;
+	background: linear-gradient(-45deg, rgba(254, 200, 154,1) 0%, rgba(255, 96, 162,1) 100%);
+	display: flex;
+    align-items: center;
+    z-index: 90;
+}
+
+.logoBelove {
+	max-height: 60px;
+	width: auto;
+	margin-left: 30px;
+}
+
+.displayProfiles {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    z-index: 10;
+}
+</style>
+</head>
+<body>
+<div class="headerBelove">
+	<img class="logoBelove" src="https://cdn.discordapp.com/attachments/1036596936783958048/1095622364055744582/belovelogo.png">
+</div>
+<div class="displayProfiles">
+	<div class="beloveProfil"><div class="alignFlex"><!--
+IMAGE DE PROFIL (resize automatique)
+--><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
+RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
+--><img src="https://i22.servimg.com/u/f22/16/09/20/13/rapide10.png" class="iconRelation"><!-- 
+NOM DU PERSONNAGE
+--><div class="nameProfil">Duncan LLORIS</div><!-- 
+AGE et LIEU D'HABITATION
+--><div class="ageLocation">29 ans • New Pyra (Haptos)</div><div class="tagInterest"><!--
+TAG CENTRE D'INTERET
+--><div>Soirées</div><div>Sportif</div><div>Cuisiner</div><div>Combats pokémons</div><!-- 
+--></div></div><!--  
+--></div><div class="detailProfil"><!-- 
+ORIENTATION SEXUELLE
+--><div class="partRub"><div class="titleRubrique">Orientation sexuelle</div><div class="answerRubrique">Bisexuelle</div></div><!--
+PROFESSION
+--><div class="partRub"><div class="titleRubrique">Profession</div><div class="answerRubrique">Coach en combat pokémon</div></div><!--
+DATE DE NAISSANCE ET SIGNE ASTRO
+--><div class="partRub"><div class="titleRubrique">Date de naissance & Signe astrologique</div><div class="answerRubrique">21/11/1993 - Sagittaire</div></div><!--
+SI TU ETAIS UN POKEMON 
+--><div class="partRub"><div class="titleRubrique">Si tu étais un pokémon, quelle espèce serais-tu et pourquoi ?</div><div class="answerRubrique">Un Arcanin pour sa loyauté</div></div><!--
+ALCOOL ET TABAC
+--><div class="partRub"><div class="titleRubrique">Niveau alcool et tabac</div><div class="answerRubrique">Fume beaucoup et bois en soirée</div></div><!-- 
+QUELQUES DETAILS SUR TOI
+--><div class="partRub"><div class="titleRubrique">Donnes nous plus de détail sur toi, même les plus croustillants ~</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+TON PARTENAIRE IDEAL
+--><div class="partRub"><div class="titleRubrique">Sinon, à quoi pourrait ressembler ton partenaire idéal ?</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+--></div></div><!-- 
+GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
+--><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
+FIN GALERIE PHOTO
+--></div> 
+<div class="beloveProfil"><div class="alignFlex"><!--
+IMAGE DE PROFIL (resize automatique)
+--><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
+RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
+--><img src="https://i22.servimg.com/u/f22/16/09/20/13/rapide10.png" class="iconRelation"><!-- 
+NOM DU PERSONNAGE
+--><div class="nameProfil">Duncan LLORIS</div><!-- 
+AGE et LIEU D'HABITATION
+--><div class="ageLocation">29 ans • New Pyra (Haptos)</div><div class="tagInterest"><!--
+TAG CENTRE D'INTERET
+--><div>Soirées</div><div>Sportif</div><div>Cuisiner</div><div>Combats pokémons</div><!-- 
+--></div></div><!--  
+--></div><div class="detailProfil"><!-- 
+ORIENTATION SEXUELLE
+--><div class="partRub"><div class="titleRubrique">Orientation sexuelle</div><div class="answerRubrique">Bisexuelle</div></div><!--
+PROFESSION
+--><div class="partRub"><div class="titleRubrique">Profession</div><div class="answerRubrique">Coach en combat pokémon</div></div><!--
+DATE DE NAISSANCE ET SIGNE ASTRO
+--><div class="partRub"><div class="titleRubrique">Date de naissance & Signe astrologique</div><div class="answerRubrique">21/11/1993 - Sagittaire</div></div><!--
+SI TU ETAIS UN POKEMON 
+--><div class="partRub"><div class="titleRubrique">Si tu étais un pokémon, quelle espèce serais-tu et pourquoi ?</div><div class="answerRubrique">Un Arcanin pour sa loyauté</div></div><!--
+ALCOOL ET TABAC
+--><div class="partRub"><div class="titleRubrique">Niveau alcool et tabac</div><div class="answerRubrique">Fume beaucoup et bois en soirée</div></div><!-- 
+QUELQUES DETAILS SUR TOI
+--><div class="partRub"><div class="titleRubrique">Donnes nous plus de détail sur toi, même les plus croustillants ~</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+TON PARTENAIRE IDEAL
+--><div class="partRub"><div class="titleRubrique">Sinon, à quoi pourrait ressembler ton partenaire idéal ?</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+--></div></div><!-- 
+GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
+--><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
+FIN GALERIE PHOTO
+--></div> 
+<div class="beloveProfil"><div class="alignFlex"><!--
+IMAGE DE PROFIL (resize automatique)
+--><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
+RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
+--><img src="https://i22.servimg.com/u/f22/16/09/20/13/rapide10.png" class="iconRelation"><!-- 
+NOM DU PERSONNAGE
+--><div class="nameProfil">Duncan LLORIS</div><!-- 
+AGE et LIEU D'HABITATION
+--><div class="ageLocation">29 ans • New Pyra (Haptos)</div><div class="tagInterest"><!--
+TAG CENTRE D'INTERET
+--><div>Soirées</div><div>Sportif</div><div>Cuisiner</div><div>Combats pokémons</div><!-- 
+--></div></div><!--  
+--></div><div class="detailProfil"><!-- 
+ORIENTATION SEXUELLE
+--><div class="partRub"><div class="titleRubrique">Orientation sexuelle</div><div class="answerRubrique">Bisexuelle</div></div><!--
+PROFESSION
+--><div class="partRub"><div class="titleRubrique">Profession</div><div class="answerRubrique">Coach en combat pokémon</div></div><!--
+DATE DE NAISSANCE ET SIGNE ASTRO
+--><div class="partRub"><div class="titleRubrique">Date de naissance & Signe astrologique</div><div class="answerRubrique">21/11/1993 - Sagittaire</div></div><!--
+SI TU ETAIS UN POKEMON 
+--><div class="partRub"><div class="titleRubrique">Si tu étais un pokémon, quelle espèce serais-tu et pourquoi ?</div><div class="answerRubrique">Un Arcanin pour sa loyauté</div></div><!--
+ALCOOL ET TABAC
+--><div class="partRub"><div class="titleRubrique">Niveau alcool et tabac</div><div class="answerRubrique">Fume beaucoup et bois en soirée</div></div><!-- 
+QUELQUES DETAILS SUR TOI
+--><div class="partRub"><div class="titleRubrique">Donnes nous plus de détail sur toi, même les plus croustillants ~</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+TON PARTENAIRE IDEAL
+--><div class="partRub"><div class="titleRubrique">Sinon, à quoi pourrait ressembler ton partenaire idéal ?</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+--></div></div><!-- 
+GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
+--><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
+FIN GALERIE PHOTO
+--></div> 
+<div class="beloveProfil"><div class="alignFlex"><!--
+IMAGE DE PROFIL (resize automatique)
+--><div class="profilPicture" style="background-image:url(https://i.pinimg.com/564x/56/5b/6d/565b6d500ff8404cce0aa5334e35e61e.jpg);"><div class="maskShadow"><!--
+RELATION CHERCHÉE (CHANGER LA FIN PAR master10.png POUR RELATION SERIEUSE / rapide10.png POUR COUP D'UN SOIR / bis10.png POUR SEXFRIEND ET copain10.png POUR RELATION AMICALE)
+--><img src="https://i22.servimg.com/u/f22/16/09/20/13/rapide10.png" class="iconRelation"><!-- 
+NOM DU PERSONNAGE
+--><div class="nameProfil">Duncan LLORIS</div><!-- 
+AGE et LIEU D'HABITATION
+--><div class="ageLocation">29 ans • New Pyra (Haptos)</div><div class="tagInterest"><!--
+TAG CENTRE D'INTERET
+--><div>Soirées</div><div>Sportif</div><div>Cuisiner</div><div>Combats pokémons</div><!-- 
+--></div></div><!--  
+--></div><div class="detailProfil"><!-- 
+ORIENTATION SEXUELLE
+--><div class="partRub"><div class="titleRubrique">Orientation sexuelle</div><div class="answerRubrique">Bisexuelle</div></div><!--
+PROFESSION
+--><div class="partRub"><div class="titleRubrique">Profession</div><div class="answerRubrique">Coach en combat pokémon</div></div><!--
+DATE DE NAISSANCE ET SIGNE ASTRO
+--><div class="partRub"><div class="titleRubrique">Date de naissance & Signe astrologique</div><div class="answerRubrique">21/11/1993 - Sagittaire</div></div><!--
+SI TU ETAIS UN POKEMON 
+--><div class="partRub"><div class="titleRubrique">Si tu étais un pokémon, quelle espèce serais-tu et pourquoi ?</div><div class="answerRubrique">Un Arcanin pour sa loyauté</div></div><!--
+ALCOOL ET TABAC
+--><div class="partRub"><div class="titleRubrique">Niveau alcool et tabac</div><div class="answerRubrique">Fume beaucoup et bois en soirée</div></div><!-- 
+QUELQUES DETAILS SUR TOI
+--><div class="partRub"><div class="titleRubrique">Donnes nous plus de détail sur toi, même les plus croustillants ~</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+TON PARTENAIRE IDEAL
+--><div class="partRub"><div class="titleRubrique">Sinon, à quoi pourrait ressembler ton partenaire idéal ?</div><div class="answerRubrique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><!--
+--></div></div><!-- 
+GALERIE PHOTO (MAX 3) - SI PAS DE PHOTO RETIRER CETTE PARTIE
+--><div class="morePictures"><div class="titlePictures">Galerie photos</div><div class="carouselPictures"><img src="https://i.pinimg.com/564x/3b/d6/6c/3bd66c93565708c213a56332106cc5b4.jpg"><img src="https://i.pinimg.com/736x/27/8e/03/278e03ef41f421436666737721edf251.jpg"><img src="https://i.pinimg.com/564x/c9/20/56/c92056a471a671e74df4eff2397f53e0.jpg"></div></div><!--
+FIN GALERIE PHOTO
+--></div> 
+</div>
+</body>
+</html>
